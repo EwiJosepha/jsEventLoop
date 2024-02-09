@@ -7,6 +7,37 @@
   <title>Js Javascript Loop Event</title>
 </head>
 <body>
- 
+ <div class="responsive-div">
+  <h2>JS EVENT LOOP</h2>
+  <div class="container">
+    <p>Before we get into explaining Js Events, it is important for us to understand : <h3>How Does JavaScript Work Behind the Scenes? JS Engine and Runtime Explained</h3</p>
+      <p>So you may know that your code somehow compiles and executes in your browser to display the beautiful web application you are built. But are you aware of all the components that come into play to enable the output?</p>
+
+      <p>Let’s dive a little into JavaScript behind the scenes. The abstract part that you can’t exactly see.</p>
+
+  </div>
+  <div class="card">
+    <h2 id="center">The JavaScript Engine</h2>
+    <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1665328527642/Nu_-L9elU.png?auto=compress,format&format=webp" alt="Description of the image">
+   
+  </div>
+  <p>The javascript engine is not a machine. It's nothing but normal code that is written in a low-level language. It takes a high-level code (javascript code) and converts it into machine-level code that can be executed by our machines For example, Google Chrome javascript engine V8 is written in C++</p>
+  <p>JS Engine uses three main steps to execute the code</p>
+  <ul>
+    <li>PARSING</li>
+    <li>COMPILATION</li>
+    <li>EXECUTION</li>
+  </ul>
+
+  <p>Parsing - It means reading your code line by line. It takes two major processes, First breaking down your code into tokens and then passing it to the Syntax Parser. The job of a syntax parser is to take the code and convert it into AST(Abstract Syntax Tree). Ast is a way of representing the code as a tree-like structure.</p>
+
+  <p>Compilation - JavaScript uses JIT ( just-in-time) compilation. It's a way of executing code that involves an interpreter along with the compiler and that mix it as a JIT. Just Think as the AST goes to the interpreter that converts high-level code to bytecodes and that moves to the execution step. While it is doing so it takes the help of the compiler to optimize the code on the run time.</p>
+  <p>Execution - The execution of code is not possible without the two main components of the JavaScript engine</p>
+
+  <ul>
+    <li>Memory Heap: The memory Heap is the place where all the variables and functions are assigned to the memory. It also has a garbage collector that used to free up memory space whenever is possible. It uses a Mark-and-sweep algorithm to free up the memory.</li>
+    <li>Call Stack:  The Job of the call stack is to execute the code. It has Globel execution context that invokes in the call stack during run time and executes the code line by line</li>
+  </ul>
+ </div>
 </body>
 </html>
